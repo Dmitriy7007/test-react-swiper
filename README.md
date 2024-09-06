@@ -1,3 +1,5 @@
+Приложение React
+
 1. Клонирование репозитория
 
 `git clone https://github.com/Dmitriy7007/test-react-swiper`
