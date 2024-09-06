@@ -1,0 +1,31 @@
+.swiperSlide {
+  padding: 0 80px;
+}
+
+.slideTitle {
+  color: #3877ee;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.slideDescription {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .slideTitle {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .slideDescription {
+    font-size: 14px;
+    line-height: 20.3px;
+  }
+
+  .swiperSlide {
+    padding: 0;
+  }
+}

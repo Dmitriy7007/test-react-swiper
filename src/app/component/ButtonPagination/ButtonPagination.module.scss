@@ -1,0 +1,12 @@
+.buttonPagination {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(66, 86, 122, 0.5);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.isActive {
+  background-color: rgba(66, 86, 122, 1);
+}

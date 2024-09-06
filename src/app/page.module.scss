@@ -1,0 +1,206 @@
+.container {
+  position: absolute;
+  min-height: 100vh;
+  width: 1440px;
+  top: 0;
+  left: 320px;
+  border-left: 1px solid #e2e5ec;
+  border-right: 1px solid #e2e5ec;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #e2e5ec;
+    top: 0;
+    left: 50%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e2e5ec;
+    top: 480px;
+    left: 0;
+  }
+
+  .heading {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 177px;
+    left: 0;
+    width: 5px;
+    height: 120px;
+    background: linear-gradient(to bottom, #3877ee, #ef5da8);
+
+    .title {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.2;
+      margin-left: 78px;
+    }
+  }
+}
+
+.circleContent {
+  position: absolute;
+  top: calc(480px - 100px);
+  left: calc(50% - 987px / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 2;
+
+  .year_left {
+    color: #3877ee;
+  }
+
+  .year_right {
+    position: absolute;
+    left: 545px;
+    color: #ef5da8;
+  }
+}
+
+.buttonsNavigation {
+  position: absolute;
+  top: 697px;
+  left: 80px;
+
+  .countSlide {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+}
+
+.swiperWrapper {
+  position: absolute;
+  top: 841px;
+  width: 100%;
+}
+
+.paginationGroup {
+  display: none;
+}
+
+.isDisabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.year {
+  position: absolute;
+  top: 0;
+}
+
+.yearNonActive {
+  opacity: 0;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .container {
+    width: 100%;
+    left: 0;
+    padding-top: 59px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: auto;
+      width: calc(100% - 40px);
+      margin-left: 20px;
+    }
+
+    .heading {
+      background: none;
+      top: auto;
+      height: auto;
+      margin-bottom: 56px;
+      position: relative;
+
+      .title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .circleContent {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    font-size: 56px;
+    line-height: 1.3;
+    margin-bottom: 129px;
+    display: flex;
+    justify-content: center;
+
+    .year_left {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      margin-right: 20px;
+    }
+
+    .year_right {
+      top: 0;
+      left: 200px;
+    }
+  }
+  .swiperWrapper {
+    width: calc(100% - 20px);
+    top: auto;
+    margin-top: 20px;
+    margin-bottom: 78px;
+  }
+
+  .buttonsNavigation {
+    top: 500px;
+    left: 20px;
+
+    .countSlide {
+      margin-bottom: 10px;
+    }
+  }
+
+  .buttonArrow {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .buttonArrowLeft > svg {
+    margin-right: 8px !important;
+  }
+
+  .pagination {
+    position: absolute;
+    top: 515px;
+    width: calc(100% - 40px);
+  }
+
+  .paginationGroup {
+    width: 86px;
+    height: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
