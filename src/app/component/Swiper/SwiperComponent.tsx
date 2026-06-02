@@ -10,6 +10,8 @@ import { slides } from '@/app/db'
 export const SwiperComponent = ({ datePeriod }: { datePeriod: number }) => {
   return (
     <Swiper
+      key={datePeriod}
+      className={styles.swiper}
       modules={[Navigation]}
       slidesPerView={3}
       spaceBetween={80}
@@ -31,7 +33,10 @@ export const SwiperComponent = ({ datePeriod }: { datePeriod: number }) => {
     >
       {slides[datePeriod - 1].slidesNews.map(item => {
         return (
-          <SwiperSlide key={item.id} className={styles.swiperSlide}>
+          <SwiperSlide
+            key={`${datePeriod}-${item.id}`}
+            className={styles.swiperSlide}
+          >
             <SwiperSlideComponent
               slideTitle={item.title}
               slideText={item.text}

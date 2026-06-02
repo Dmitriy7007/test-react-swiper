@@ -59,13 +59,17 @@
   z-index: 2;
 
   .year_left {
+    display: inline-block;
     color: #3877ee;
+    font-variant-numeric: tabular-nums;
   }
 
   .year_right {
     position: absolute;
+    display: inline-block;
     left: 545px;
     color: #ef5da8;
+    font-variant-numeric: tabular-nums;
   }
 }
 
@@ -94,15 +98,6 @@
 .isDisabled {
   opacity: 0.5;
   cursor: auto;
-}
-
-.year {
-  position: absolute;
-  top: 0;
-}
-
-.yearNonActive {
-  opacity: 0;
 }
 
 @media (min-width: 320px) and (max-width: 420px) {

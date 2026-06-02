@@ -12,7 +12,7 @@ export interface IStore {
 }
 
 export const useAppStore = create<IStore>(set => ({
-  datePeriod: 3,
+  datePeriod: 1,
   countPoints: 6,
   isAnimate: false,
   inc: () => set(state => inc(state)),
